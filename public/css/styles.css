@@ -1,0 +1,18 @@
+body{
+     background-color: aquamarine;
+}
+
+h1 {
+     color: #111; 
+     font-family: 'Helvetica Neue', sans-serif; 
+     font-size: 275px; 
+     font-weight: bold; 
+     letter-spacing: -1px; 
+     line-height: 1; 
+     text-align: center; 
+    }
+
+.shell{
+     margin-left: 15px;
+     background-color: aqua;
+}

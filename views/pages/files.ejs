@@ -1,0 +1,25 @@
+<body>
+
+    <h1 id="titleFile">Welcome, here your files</h1>
+
+    <ul id="hundleFiles">
+
+        <% myFiles.forEach((file)=> { %>
+
+            <li id="handleItem">
+
+                <h2>
+
+                    <%= file %>
+
+                </h2>
+
+            </li>
+
+            <hr />
+
+        <% }) %>
+
+    </ul>
+
+</body>

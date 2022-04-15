@@ -1,0 +1,110 @@
+<html>
+<head>
+    
+    <title>
+       Securo Server
+    </title>
+    <style>
+        input[type=text]{
+             font-family: 'Roboto', sans-serif;
+            color: #333;
+           
+            
+            border-radius: 0.2rem;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            display: block;
+            border-bottom: 0.3rem solid transparent;
+            transition: all 0.3s;
+        }
+        input[type=submit]{
+            font-family: 'Roboto', sans-serif;
+            border-radius: 4px;
+            background-color:#00d33f;
+            border: none;
+            
+           
+            transition: all 0.5s;
+            
+            border-radius: 0.2rem;
+            
+        }
+        body{
+     background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+    display: flex;
+    
+    height: 100vh;
+    color: #fff;
+        }
+     h1 {
+     
+     font-family: 'Helvetica Neue', sans-serif; 
+     font-weight: bold; 
+     letter-spacing: -1px; 
+     line-height: 1; 
+     text-align: center; 
+     
+    }
+    .content{
+        padding-top: 130px;
+       padding-left: 150px; 
+       justify-content: center;
+        align-items: center;
+    }
+        </style>
+</head>
+
+<body>
+
+<h1>SECURO SERVER</h1>
+
+<div class="content">
+
+<div class="file">
+
+    <form action="/files" method="post">
+
+        <input type="text" name="docname" placeholder="Nom du dossier/fichier" required="yes">
+        &nbsp
+        <input type="submit" value="Creer un fichier/dossier">
+
+    </form>
+
+</div>
+
+<div class="dlt">
+
+    <form action="/delete" method="post">
+
+        <input type="text" name="fileName" placeholder="Dossier/Fichier a supprimer" required="yes">
+        &nbsp
+        <input type="submit" value="Supprimer">
+
+    </form>
+
+</div>
+<div class="action">
+<form action="/move" method="post">
+
+    <input type="text" name="fileName_1" placeholder="Origine" required="yes">
+    &nbsp
+    <input type="text" name="fileName_2" placeholder="Destination" required="yes">
+    &nbsp
+    <input type="submit" value="Deplacer">
+
+</form>
+</div>
+<div class="shell">
+<form action="/shell" method="post">
+
+    <input type="text" name="shell" placeholder="Ecriver votre commande ici..." required="yes">
+    &nbsp
+    <input type="submit" value="run">
+
+</form>
+</div>
+</div>
+
+</body>
+
+</html>
